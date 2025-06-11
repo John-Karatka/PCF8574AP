@@ -1,6 +1,16 @@
 #include "PCF.h"
 #include <Wire.h>
 
+/* 
+    Ack errors:
+    0: success.
+    1: data too long to fit in transmit buffer.
+    2: received NACK on transmit of address.
+    3: received NACK on transmit of data.
+    4: other error.
+    5: timeout
+*/
+
 //Constructor
 PCF::PCF(unsigned char PCF_Address) {
 	address = PCF_Address;
