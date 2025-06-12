@@ -14,8 +14,7 @@ A2, A1, A0
 110 - 62
 111 - 63
 */
-const int DEVICE_ADDRESS = 0; //Set addres of device here. See page 
-uint8_t data;
+const int DEVICE_ADDRESS = 0; //Set addres of device here
 PCF pcf_chip(DEVICE_ADDRESS);
 
 void setup() {
